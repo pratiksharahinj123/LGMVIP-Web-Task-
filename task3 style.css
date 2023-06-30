@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+:root {
+   --bg-light-green: #020202;
+  /* --bg-green-yellow: #D07CA4;
+  --b-dark-yellow: #C12B72;
+  --b-light-yellow: #fff;  */
+}
+
+.nav-bar {
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  background-color: var(--bg-light-green);
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: solid 2px #020202;
+  color: white;
+}
+
+.d-flex {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.students {
+  height: auto;
+  width: 100%;
+  background-color:  #c4ccca;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 700; 
+}
+
+.enroll-student {
+  margin-top: 30px;
+  padding-right: 100px;
+  box-sizing: border-box;
+  width: 45%;
+  height: auto;
+}
+
+#enrolled-students {
+  margin: 521px 392px 326px -1077px;
+  justify-content: center;
+  width: 55%;
+  height: calc(100vh - 70px);
+}
+
+.enroll-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gender {
+  padding-left: 15px;
+}
+
+.label {
+  display: flex;
+  font-size: 30px;
+}
+
+.form-control {
+  margin-bottom: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: center;
+  background-color: #161816;
+  color: #fff;
+  box-sizing: border-box;
+  border: solid 2px #161816;
+}
+
+.sectionHeading > p {
+  padding: 10px 12px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.description {
+  box-sizing: border-box;
+  border-right: solid 2px #f4e7ed;
+  margin-bottom: 0;
+  width: 71%;
+}
+
+.Image {
+  margin-bottom: 0;
+  width: 30%;
+}
+
+.infoText {
+  margin: 0;
+  padding: 0;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  justify-content: space-between;
+  border: solid 2px  #232021;
+  border-top: none;
+  animation: fadeIn 2s;
+  position: relative;
+}
+
+.userDeleteBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  transform: rotate(45deg);
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  button.userDeleteBtn {
+    display:block;
+  }
+  
+}
+
+.wrapper:hover .userDeleteBtn {
+  display: block;
+}
+
+.wrapper:nth-child(odd) {
+  background-color: #fff;
+}
+.wrapper:nth-child(even) {
+  background-color: var(--b-light-yellow);
+}
+
+.textInfoContainer {
+  width: 70%;
+  height: 110%;
+  box-sizing: border-box;
+  border-right: solid 2px #080607;
+  padding: 10px;
+}
+
+.imageContainer {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.userImage {
+  height: auto;
+  width: 105px;
+}
+
+.fadeIn {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
